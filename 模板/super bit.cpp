@@ -20,3 +20,11 @@ int find_range_kth(int k)
 	}
 	return ans+1;
 }
+int pre(int x)
+{
+	return find_range_kth(rank(x)-1);
+}
+int next(int x)
+{
+	return find_range_kth(rank(x)+1);
+}

@@ -26,5 +26,5 @@ int pre(int x)
 }
 int next(int x)
 {
-	return find_range_kth(rank(x)+1);
+	return find_range_kth(rank(x+1));
 }

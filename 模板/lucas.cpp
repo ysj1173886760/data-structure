@@ -20,7 +20,7 @@ void init()
     b[0]=b[1]=1;
     for(int i=2;i<=p;i++)
         a[i]=1ll*a[i-1]*i%p;
-    b[p-1]=fpow(p-1,p-2);
+    b[p-1]=p-1;
     for(int i=p-2;i>=1;i--)b[i]=1ll*b[i+1]*(i+1)%p;
 }
 int c(int x,int y)
